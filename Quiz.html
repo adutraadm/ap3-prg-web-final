@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8" />
+		<title>Ap3 - Quiz</title>
+		<link href="quiz.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="quizContainer" class="container">
+		    <img src="imagem/imagem.jpg" alt="Image" height="40">
+			<div class="title">Quiz Show do milhão</div>
+			<div id="question" class="question"></div>
+			<label class="option"><input type="radio" name="option" value="1" /> <span id="opt1"></span></label>
+			<label class="option"><input type="radio" name="option" value="2" /> <span id="opt2"></span></label>
+			<label class="option"><input type="radio" name="option" value="3" /> <span id="opt3"></span></label>
+			<label class="option"><input type="radio" name="option" value="4" /> <span id="opt4"></span></label>
+			<button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Proxima pergunta</button>
+			<div id="minhaDiv-e" class="result-item-errado" style="display:none">Errouuuuu</div>
+			<div id="minhaDiv-c" class="result-item-certo" style="display:none">Acertou-miseravi</div>
+		</div>
+		
+		<div id="result" class="container result" style="display:none;">
+		</div>
+		<script src="question.js"></script>
+		<script src="quiz-script.js"></script>
+	</body>
+</html>
